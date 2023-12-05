@@ -1,6 +1,6 @@
 # project-california
 
-Here's a little cheat sheet for git commands
+Here's a little project including SCSS/SASS
 
 ## Authors
 
