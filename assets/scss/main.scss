@@ -1,9 +1,302 @@
-@import 'fonts';
-
 @use 'variables' as var;
+
+@import 'fonts';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter';
+    text-align: center;
+    color: white;
+}
+
+img {
+    max-width: 731px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+}
+
+
+header {
+    margin: auto;
+    max-width: 1280px;
+    background-color: black;
+    padding: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .divider {
+        background: var.$accent-lgrey;
+        width: 1px;
+        height: 150px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p {
+            font-size: 0.75em;
+            color: white;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            width: 400px;
+
+            span {
+                text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+                color: black;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+aside {
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px 0px;
+}
+
+main {
+    margin: auto;
+    max-width: 1280px;
+    padding-top: 100px;
+    background-color: black;
+
+    .circle {
+        position: absolute;
+        top: 4000px;
+    }
+
+    .story {
+        background-color: black;
+        font-size: 5rem;
+        padding: 0px 60px;
+        height: 1800px;
+
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .story-stat {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        max-height: 1000px;
+
+        img {
+            position: absolute;
+            left: 750px;
+            width: 450px;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 5rem;
+        }
+    }
+
+    .cta {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        min-height: 2000px;
+
+        img {
+            max-width: 330px;
+        }
+
+        z-index: 2;
+
+        .cta-1 {
+            position: absolute;
+            top: -5%;
+            right: 5%;
+        }
+
+        .cta-2 {
+            position: absolute;
+            max-width: 275px;
+            top: 27%;
+            left: 0%;
+        }
+
+        .cta-3 {
+            position: absolute;
+            top: 51%;
+            right: 0%;
+        }
+
+        .cta-4 {
+            position: absolute;
+            top: 63%;
+            left: 15%;
+        }
+
+        .cta-5 {
+            position: absolute;
+            top: 73%;
+            right: 15%;
+        }
+
+        .cta-6 {
+            position: absolute;
+            top: 85%;
+            left: 2%;
+            max-width: 275px;
+        }
+
+        .cta-7 {
+            position: absolute;
+            top: 90%;
+            right: 20%;
+        }
+
+        .story-text {
+            width: 500px;
+            padding-top: 400px;
+
+            h2 {
+                color: black;
+                font-size: 5rem;
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+                color: black;
+                line-height: 30px;
+                width: 390px;
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+
+    .gbear{
+        padding-top: 100px;
+        width: 90vw;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            h2{
+                font-size: 5rem;
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+            h3{
+                text-align: left;
+                font-size: 2rem;
+            }
+        }
+        .right, .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .right{
+            width: 600px;
+            gap: 20px;
+        }
+        .left{
+            width: 5vw;
+            padding-left: 50px;
+        }
+
+        img:nth-of-type(2){
+            width: 366px;
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+        }
+        img:first-of-type{
+            position: absolute;
+            left: 5%;
+            width: 730px;
+        }
+    }
+    .pbear{
+        padding-top: 100px;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: white;
+        color: black;
+        .content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            h2{
+                font-size: 5rem;
+                text-align: left;
+                color: black;
+            }
+            p{
+                text-align: left;
+                color: black;
+            }
+            h3{
+                text-align: left;
+                font-size: 2rem;
+                color: black;
+            }
+        }
+        .right, .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .right{
+            width: 600px;
+            gap: 20px;
+        }
+        .left{
+            width: 5vw;
+            padding-left: 50px;
+        }
+
+        img:first-of-type{
+            width: 730px;
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+        }
+        img:nth-of-type(2){
+            position: absolute;
+            left: 5%;
+            width: 366px;
+
+        }
+    }
 }

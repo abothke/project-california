@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  text-align: center;
+  color: white;
+}
+
+img {
+  max-width: 731px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+}
+
+header {
+  margin: auto;
+  max-width: 1280px;
+  background-color: black;
+  padding: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .divider {
+  background: rgb(170, 170, 170);
+  width: 1px;
+  height: 150px;
+}
+header article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+header article p {
+  font-size: 0.75em;
+  color: white;
+}
+header article h1 {
+  font-size: 4rem;
+  color: white;
+  width: 400px;
+}
+header article h1 span {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
+  display: inline-block;
+}
+
+aside {
+  margin: auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  padding: 20px 0px;
+}
+
+main {
+  margin: auto;
+  max-width: 1280px;
+  padding-top: 100px;
+  background-color: black;
+}
+main .circle {
+  position: absolute;
+  top: 4000px;
+}
+main .story {
+  background-color: black;
+  font-size: 5rem;
+  padding: 0px 60px;
+  height: 1800px;
+}
+main .story h2 {
+  text-align: left;
+}
+main .story-stat {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  max-height: 1000px;
+}
+main .story-stat img {
+  position: absolute;
+  left: 750px;
+  width: 450px;
+}
+main .story-stat p {
+  font-size: 0.9rem;
+}
+main .story-stat h2 {
+  font-size: 5rem;
+}
+main .cta {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  min-height: 2000px;
+  z-index: 2;
+}
+main .cta img {
+  max-width: 330px;
+}
+main .cta .cta-1 {
+  position: absolute;
+  top: -5%;
+  right: 5%;
+}
+main .cta .cta-2 {
+  position: absolute;
+  max-width: 275px;
+  top: 27%;
+  left: 0%;
+}
+main .cta .cta-3 {
+  position: absolute;
+  top: 51%;
+  right: 0%;
+}
+main .cta .cta-4 {
+  position: absolute;
+  top: 63%;
+  left: 15%;
+}
+main .cta .cta-5 {
+  position: absolute;
+  top: 73%;
+  right: 15%;
+}
+main .cta .cta-6 {
+  position: absolute;
+  top: 85%;
+  left: 2%;
+  max-width: 275px;
+}
+main .cta .cta-7 {
+  position: absolute;
+  top: 90%;
+  right: 20%;
+}
+main .cta .story-text {
+  width: 500px;
+  padding-top: 400px;
+}
+main .cta .story-text h2 {
+  color: black;
+  font-size: 5rem;
+  text-align: left;
+}
+main .cta .story-text p {
+  text-align: left;
+  color: black;
+  line-height: 30px;
+  width: 390px;
+  letter-spacing: -0.4px;
+}
+main .gbear {
+  padding-top: 100px;
+  width: 90vw;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .gbear .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+main .gbear .content h2 {
+  font-size: 5rem;
+  text-align: left;
+}
+main .gbear .content p {
+  text-align: left;
+}
+main .gbear .content h3 {
+  text-align: left;
+  font-size: 2rem;
+}
+main .gbear .right, main .gbear .left {
+  display: flex;
+  flex-direction: column;
+}
+main .gbear .right {
+  width: 600px;
+  gap: 20px;
+}
+main .gbear .left {
+  width: 5vw;
+  padding-left: 50px;
+}
+main .gbear img:nth-of-type(2) {
+  width: 366px;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+main .gbear img:first-of-type {
+  position: absolute;
+  left: 5%;
+  width: 730px;
+}
+main .pbear {
+  padding-top: 100px;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  color: black;
+}
+main .pbear .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+main .pbear .content h2 {
+  font-size: 5rem;
+  text-align: left;
+  color: black;
+}
+main .pbear .content p {
+  text-align: left;
+  color: black;
+}
+main .pbear .content h3 {
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+}
+main .pbear .right, main .pbear .left {
+  display: flex;
+  flex-direction: column;
+}
+main .pbear .right {
+  width: 600px;
+  gap: 20px;
+}
+main .pbear .left {
+  width: 5vw;
+  padding-left: 50px;
+}
+main .pbear img:first-of-type {
+  width: 730px;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+main .pbear img:nth-of-type(2) {
+  position: absolute;
+  left: 5%;
+  width: 366px;
+}
+
+/*# sourceMappingURL=style.css.map */
