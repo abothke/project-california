@@ -78,7 +78,11 @@ main {
 }
 main .circle {
   position: absolute;
-  top: 4000px;
+  top: 6300px;
+  left: 600px;
+  overflow: hidden;
+  z-index: 1;
+  animation: circle 15s 0.1s linear infinite;
 }
 main .story {
   background-color: black;
@@ -101,6 +105,7 @@ main .story-stat img {
   position: absolute;
   left: 750px;
   width: 450px;
+  top: 100px;
 }
 main .story-stat p {
   font-size: 0.9rem;
@@ -273,6 +278,74 @@ main .pbear img:nth-of-type(2) {
   position: absolute;
   left: 5%;
   width: 366px;
+}
+
+footer {
+  background: black;
+  background-color: black;
+  max-width: 1280px;
+  height: 800px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: space-between;
+  position: relative;
+}
+footer .footer-hero {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+  padding-left: 100px;
+}
+footer h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 45px;
+}
+footer p {
+  text-align: left;
+}
+footer div {
+  padding-top: 20px;
+  text-align: left;
+}
+footer .fcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+footer .fcontent .ftext {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+footer .fcontent .ftext img {
+  width: 15px;
+}
+footer .logof {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+footer .logof img {
+  width: 50px;
+  height: 30px;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
